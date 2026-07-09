@@ -2,7 +2,7 @@
 // and persisted through the host's settings store.
 import { registerWidget, type WidgetContext } from "@togo-framework/widget";
 
-function Notes({ settings, setSettings, editing }: WidgetContext) {
+export function Notes({ settings, setSettings, editing }: WidgetContext) {
   const text = (settings.text as string) ?? "Double-tap the pencil, then jot anything here — it persists across reloads.";
   if (editing) {
     return (
